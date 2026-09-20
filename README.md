@@ -235,19 +235,19 @@ This allows management to move from individual transaction records to representa
 
 Each sales representative has a monthly sales target of:
 
-₦5,000,000
+$5,000,000
 
 The system is designed to recognize that this is a monthly target, rather than an all-time target.
 
 Therefore:
 
 Monthly Target
-= ₦5,000,000 per representative
+= $5,000,000 per representative
 
 For multiple months:
 
 Period Target
-= ₦5,000,000 × Number of Months
+= $5,000,000 × Number of Months
 
 This allows target achievement to remain meaningful when management changes the reporting period.
 
