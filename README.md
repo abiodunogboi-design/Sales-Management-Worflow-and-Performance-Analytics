@@ -112,6 +112,7 @@ Instead, the workflow is designed so that new operational records can flow throu
 
 Google Sheets
 <img width="959" height="352" alt="Screenshot 2026-09-23 143741" src="https://github.com/user-attachments/assets/4dc5a6b2-75e0-492d-a37a-5e5d1a07635d" />
+<img width="917" height="345" alt="Screenshot 2026-09-23 143816" src="https://github.com/user-attachments/assets/aace21a7-6162-4405-91ed-15651ca1c4eb" />
 
 Google Sheets acts as the operational interface.
 
