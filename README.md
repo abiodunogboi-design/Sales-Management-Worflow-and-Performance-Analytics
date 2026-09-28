@@ -2,9 +2,9 @@
 
 Synthexa Global Solutions — Sales Management Workflow & Analytics System
 
-🚀 Project Overview
+🚀 This project is an interactive sales management dashboard built in Excel to analyze sales performance, customer payments, outstanding debts, and target achievement. Using data cleaning, formulas, pivot tables, slicers, and dynamic KPIs, I transformed raw sales records into actionable insights for monitoring both sales representatives and distributors. The dashboard is designed as a practical business tool that supports daily performance tracking and data-driven decision-making.
 
-🚨
+🚨An end-to-end data analytics project demonstrating raw data transformation, database engineering, and interactive dashboard design. This project takes messy, unstructured retail transaction logs through a strict MySQL pipeline and transforms them into an internal sales team leaderboard to track peer performance.
 
 ---
 
