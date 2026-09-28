@@ -46,6 +46,7 @@ The objective is to create a repeatable workflow where operational data can cont
 ---
 
 🏗️ System Architecture
+
                           GOOGLE SHEET                                            
                                |                                                          
                                ▼                                                          
