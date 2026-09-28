@@ -39,7 +39,7 @@ The system connects two sub-systems:
 
 - **Sales Operations (Google sheet):** Distributor Tiers assignment(discounting purpose) → Sales Data Capture → Data Staging → Balance Sheet → Sales Rep KPI Calculation → Sales Rep Performance Analysis.
   
-- **Analytics (WPS):** Dumped data → Data Staging → KPI Calculations → Executive Dashboard.
+- **Analytics (WPS):** Dumped data → Data Staging → Data Cleaning → KPI Calculations → Executive Dashboard.
 
 The objective is to create a repeatable workflow where operational data can continuously flow into the analytical environment, reducing manual intervention while giving management visibility into sales performance, target achievement, customer activity, and debt recovery.
 
