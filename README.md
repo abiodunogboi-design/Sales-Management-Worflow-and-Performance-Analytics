@@ -102,7 +102,7 @@ The person entering sales data does not need to manually manipulate the manageme
 
 Instead, the workflow is designed so that new operational records can flow through the system and become available for analysis.
 
-
+---
 
 🔄 **How the Workflow Works**
 
@@ -111,6 +111,8 @@ Instead, the workflow is designed so that new operational records can flow throu
 Google Sheets
 
 Google Sheets acts as the operational interface.
+
+**Interract with the google sheet interface [here](https://docs.google.com/spreadsheets/d/11vOJej1EhdzehAz3htSsr2jR4gbEbQv5AfkF0_2Q5Wo/edit?usp=sharing)**
 
 Sales information can be entered as transactions occur.
 
@@ -129,9 +131,9 @@ The dataset captures:
 - Unit Price: The price per unit product
 - Total Price: The total cost of the order
 
+
 This allows the operational side of the business to work with a simple data-entry environment without directly interacting with the analytical calculations.
 
----
 
 2. Automated Data Flow
 
