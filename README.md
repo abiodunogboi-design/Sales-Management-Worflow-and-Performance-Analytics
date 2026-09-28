@@ -104,7 +104,7 @@ Instead, the workflow is designed so that new operational records can flow throu
 
 
 
-🔄 How the Workflow Works
+🔄 **How the Workflow Works**
 
 1. Operational Data Capture
 
@@ -488,31 +488,6 @@ Analytical Processing| PivotTables & formulas
 Visualization| WPS Spreadsheet
 Version Control / Portfolio| GitHub
 
----
-
-📁 Project Structure
-
-OG-Enterprise-Sales-Workflow/
-│
-├── README.md
-│
-├── Data/
-│   └── sales_data.csv
-│
-├── Workflow/
-│   └── OG_Enterprise_Sales_Workflow.xlsx
-│
-├── Analysis/
-│   └── exploratory_data_analysis.ipynb
-│
-├── SQL/
-│   └── sales_analysis.sql
-│
-└── Images/
-    └── management_dashboard.png
-
----
-
 🔮 Future Development
 
 The current spreadsheet-based workflow provides the foundation for a more advanced business intelligence system.
@@ -565,7 +540,7 @@ That workflow perspective is the core of the project.
 
 Sunday Ogboi
 
-Aspiring Data Analyst focused on data analytics, business intelligence, data workflows, and practical data-driven solutions.
+Data Analyst focused on data analytics, business intelligence, data workflows, and practical data-driven solutions.
 
 My portfolio focuses on building projects that demonstrate not only technical skills, but also the ability to translate real business processes into structured analytical systems.
 
