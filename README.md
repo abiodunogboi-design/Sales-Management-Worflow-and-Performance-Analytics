@@ -46,18 +46,31 @@ The objective is to create a repeatable workflow where operational data can cont
 ---
 
 🏗️ System Architecture
-
-                         SALES OPERATIONS
+                          **GOOGLE SHEET**                                             
+                               |                                                          
+                               ▼                                                          
+                       DISTRIBUTER DATABASE                                               
+      (Tiers, Sales rep and discount automatic assignment)                                
+                               │                                                          
+                               ▼                                                          
+                         All Price List                                                   
+               (Source of truth for all tier pricing)                                     
+                               |                                                          
+                               ▼                                                          
+                         Sales Operation                                                  
+                               |                                                          
+                               ▼                                                          
+                     Operational Data Entry ─────────────────────────────────────────── **WPS**
+                       (Sales interface)
                                │
                                ▼
-                        GOOGLE SHEETS
-                     Operational Data Entry
-                               │
-                               │
+                       Credit and Debit
+                       (Balance sheet)
+                               |
                                ▼
-                         DUMPED DATA
-                    Imported Source Layer
-                               │
+                         Rep Metrics
+                    (Sales rep performance)
+                             
                                ▼
                            RAW DATA
                     Staging / Organization
