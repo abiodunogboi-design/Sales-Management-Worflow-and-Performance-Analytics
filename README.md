@@ -134,7 +134,7 @@ The dataset captures:
 This allows the operational side of the business to work with a simple data-entry environment without directly interacting with the analytical calculations.
 
  **Technicality:**
- - The sales interface functions like an app that records and process orders. Therefore, it wasn't designed to look like the conventional data structure. However, it was colapsed into the conventional data structure in a different sheet tab to enhance analytics with the formula
+ - The sales interface functions like an app that records and process orders. Therefore, it wasn't designed to look like the conventional data structure. However, it was collapsed into the conventional data structure in the analytics data tab to enhance analytics uning a query that splits and flattens the products columns ***C to S*** into a a single column with the header quanity because each of the product column contains the respective quantity ordered.
 
    ---
    =ARRAYFORMULA(
