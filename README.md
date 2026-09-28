@@ -288,6 +288,8 @@ Once the data has been standardized, it enters the analytical layer.
 
 The system uses PivotTables and spreadsheet calculations to transform transaction-level records into management-level metrics.
 
+<img width="953" height="388" alt="Screenshot 2026-09-23 144420" src="https://github.com/user-attachments/assets/a928a588-c851-47cb-b1fb-224bdd159bc5" />
+
 ---
 
 **📈 Sales Performance**
