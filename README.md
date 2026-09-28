@@ -54,10 +54,10 @@ The objective is to create a repeatable workflow where operational data can cont
 
 🏗️ System Architecture
 
-                          GOOGLE SHEET                                            
+                          Google Sheet                                          
                                |                                                          
                                ▼                                                          
-                       DISTRIBUTER DATABASE                                               
+                       Distributor Database                                          
       (Tiers, Sales rep and discount automatic assignment)                                
                                │                                                          
                                ▼                                                          
@@ -72,12 +72,12 @@ The objective is to create a repeatable workflow where operational data can cont
                        (Sales interface)               (Published to web)                  |
                                │                                                           ▼
                                ▼                                                       Dumped Data
-                       Credit and Debit                                                    |
-                       (Balance sheet)                                                     ▼
-                               |                                                        Raw Data
-                               ▼                                                  (Staging / Organization)
-                         Rep Metrics                                                       |
+                           Rep Metrics                                                     |
                     (Sales rep performance)                                                ▼
+                                                                                        Raw Data
+                                                                                  (Staging / Organization)
+                                                                                           |
+                                                                                           ▼
                                                                                       Cleam Data  
                                                                               (Standardized Analytical Dataset)
                                                                                            |
@@ -143,7 +143,7 @@ This allows the operational side of the business to work with a simple data-entr
 
 <img width="788" height="345" alt="Screenshot 2026-09-23 143834" src="https://github.com/user-attachments/assets/2474e115-1632-46ad-b988-ce4c6d317a3f" />
 
-   ---
+  ```
    =ARRAYFORMULA(
   QUERY(
     SPLIT(
@@ -165,17 +165,17 @@ This allows the operational side of the business to work with a simple data-entr
     0
   )
 )
-
----
+```
 
  -  Each distributor is automatically assigned a tier based on their total quantity purched history. Any distributor that has less than 20,000 units in total quantity purchased in assigned a tier 1 with 0% discount on all purchase. Distributors with more than 20,000 and less than 50,000 units in total quantities purchased is assigned a tier 2 with 1.5% discount on all subsequent purchases upon attaining the tier, distributors with more than 50,000 and less than 100,000 units in total quantities purchased are assigned a tier 3 with 3% discount on all subsequent purchases upon attaining the tier, while distributors with over 100,000 units in total quantities purchased are assigned tier 4 with 5% discount on all subsequent purchases upon attaining the tier. This is achieved using the formula:
 
----
+```
 
 =XLOOKUP(SUMPRODUCT((Sales!$B$2:$B$801=$A17) * Sales!$C$2:$S$100000), $E$2:$E$5, $F$2:$F$5, "Tier 1", -1)
 
----
+```
 <img width="959" height="373" alt="image" src="https://github.com/user-attachments/assets/8be8037c-c6ff-4cdd-b80c-2618aad408c2" />
+
 
 **2. Automated Data Flow**
 
@@ -202,7 +202,7 @@ The WPS import was configured to refresh automatically, allowing the management 
 
 **3. Dumped Data Layer**
 
-"Dumped_Data"
+<img width="959" height="367" alt="Screenshot 2026-09-23 144231" src="https://github.com/user-attachments/assets/0cb80ed0-ce53-46ce-9cf9-9e3e572b56df" />
 
 The dumped layer represents the incoming source data.
 
@@ -222,7 +222,7 @@ processed data.
 
 **4. Raw Data Layer**
 
-"Raw_Data"
+<img width="950" height="346" alt="Screenshot 2026-09-23 144255" src="https://github.com/user-attachments/assets/a2beda7c-befa-41d2-9826-144b4c10e589" />
 
 The raw layer acts as the staging environment.
 
@@ -242,7 +242,7 @@ Each stage has a defined responsibility rather than mixing source data, transfor
 
 **5. Clean Data Layer**
 
-"Clean_Data"
+<img width="944" height="347" alt="Screenshot 2026-09-28 150419" src="https://github.com/user-attachments/assets/64ac9362-214d-4dff-89f7-aa89f0acde1a" />
 
 This is the system's analytical data layer.
 
