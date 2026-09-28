@@ -62,10 +62,10 @@ The objective is to create a repeatable workflow where operational data can cont
                                |                                                          
                                ▼                                                          
                      Operational Data Entry ─────────────────────────────────────────── **WPS**
-                       (Sales interface)
-                               │
-                               ▼
-                       Credit and Debit
+                       (Sales interface)                                                   |
+                               │                                                           |
+                               ▼                                                           ▼
+                       Credit and Debit                                                   
                        (Balance sheet)
                                |
                                ▼
