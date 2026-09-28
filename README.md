@@ -214,7 +214,7 @@ processed data.
 
 ---
 
-4. Raw Data Layer
+**4. Raw Data Layer**
 
 "Raw_Data"
 
@@ -234,7 +234,7 @@ Each stage has a defined responsibility rather than mixing source data, transfor
 
 ---
 
-5. Clean Data Layer
+**5. Clean Data Layer**
 
 "Clean_Data"
 
@@ -273,7 +273,7 @@ The system uses PivotTables and spreadsheet calculations to transform transactio
 
 ---
 
-📈 Sales Performance
+**📈 Sales Performance**
 
 The system analyzes sales performance by representative using metrics including:
 
@@ -288,7 +288,7 @@ This allows management to move from individual transaction records to representa
 
 ---
 
-🎯 Target Management
+**🎯 Target Management**
 
 Each sales representative has a monthly sales target of:
 
@@ -310,7 +310,7 @@ This allows target achievement to remain meaningful when management changes the 
 
 ---
 
-💰 Revenue & Payment Workflow
+**💰 Revenue & Payment Workflow**
 
 The system does not stop at sales generation.
 
@@ -331,7 +331,7 @@ That is an important distinction between a simple sales dashboard and a sales ma
 
 ---
 
-📦 Product & Distributor Analysis
+**📦 Product & Distributor Analysis**
 
 The workflow also transforms transaction records into product and distributor intelligence.
 
