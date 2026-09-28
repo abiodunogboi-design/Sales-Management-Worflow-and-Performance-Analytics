@@ -3,7 +3,14 @@
 Synthexa Global Solutions — Sales Management Workflow & Analytics System
 
 🚀 Project Overview
-🚨 In fast-paced sales environments, capturing transactional data quickly and accurately is vital for strategic decision-making. However, Synthexa Global Solution's sales-tracking workflow relied on fragmented, unvalidated data collection methods. Sales representatives submitted their daily transaction logs via disparate formats, including email, chat apps, and unstructured spreadsheets.This ad-hoc workflow created severe operational bottlenecks and financial risks such as:
+
+🚨 In fast-paced sales environments, capturing transactional data quickly and accurately is vital for strategic decision-making. However, Synthexa Global Solution's sales-tracking workflow relied on fragmented, unvalidated data collection methods. Sales representatives submitted their daily transaction logs via disparate formats, including email, chat apps, and unstructured spreadsheets.This ad-hoc workflow created severe operational bottlenecks and financial risks
+
+---
+
+🎯 The Business Problem
+
+---
 
 **Severe Data Corruption & Manual Errors:** Representatives frequently entered invalid SKUs, left critical data fields blank, or accidentally over-wrote orders.
 
@@ -95,11 +102,7 @@ The person entering sales data does not need to manually manipulate the manageme
 
 Instead, the workflow is designed so that new operational records can flow through the system and become available for analysis.
 
----
 
-🎯 The Business Problem
-
----
 
 🔄 How the Workflow Works
 
@@ -113,18 +116,18 @@ Sales information can be entered as transactions occur.
 
 The dataset captures:
 
-- Sales Representative
-- Distributor
-- Product
-- Quantity
-- Current Tier
-- Tier at Purchase
-- Supply Date
-- Expected Payment Date
-- Payment Status
-- Amount Due
-- Unit Price
-- Total Price
+- Sales Representative : The name of the sales rep executing the order
+- Distributor: The Distributor raising the order
+- Product: The products raised by the distributor
+- Quantity: The quantity of products raised by the distributor
+- Current Tier: The discount percentage tier the distributor is currently on
+- Tier at Purchase: The discout percentage tier the distributor was at the time of purchase
+- Supply Date: The date the distributor received their order
+- Expected Payment Date: The date the distributor is expected to pay for orders received
+- Payment Status: Paid/Unpaid as of current date
+- Due For Payment: shows whether the expected payment date has passed
+- Unit Price: The price per unit product
+- Total Price: The total cost of the order
 
 This allows the operational side of the business to work with a simple data-entry environment without directly interacting with the analytical calculations.
 
