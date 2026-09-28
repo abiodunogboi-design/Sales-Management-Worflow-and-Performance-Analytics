@@ -1,4 +1,4 @@
-# Sales-Management-Worflow-and-Performance-Analytics
+# Sales-Management-Worflow-And-Performance-Analytics
 
 Synthexa Global Solutions — Sales Management Workflow & Analytics System
 
