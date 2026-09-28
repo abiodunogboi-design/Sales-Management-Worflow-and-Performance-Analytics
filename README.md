@@ -184,16 +184,17 @@ The operational Google Sheet is connected to the analytical workbook through a p
 This creates a workflow in which:
 
 New transaction entered
-        ↓
+        → 
 Google Sheets updated
-        ↓
+        → 
 Published data source updated
-        ↓
+        → 
 WPS imports the updated data
-        ↓
+        → 
 Analytical layers update
-        ↓
+        → 
 Dashboard reflects new information
+
 
 The WPS import was configured to refresh automatically, allowing the management workbook to receive updated source information without requiring the entire workflow to be rebuilt manually.
 
@@ -230,9 +231,9 @@ Data is organized into a consistent tabular structure before entering the analyt
 This creates a clear progression:
 
 Dumped Data
-     ↓
+     → 
 Raw Data
-     ↓
+     → 
 Clean Data
 
 Each stage has a defined responsibility rather than mixing source data, transformations, and reporting logic together.
@@ -250,16 +251,27 @@ The objective is not simply to make the data visually clean.
 Each field is converted to its expected analytical data type.
 
 Sales Rep| Text
+
 Distributor| Text
+
 Product| Text
+
 Quantity| Numeric
+
 Current Tier| Text
+
 Tier at Purchase| Text
+
 Supply Date| Date
+
 Expected Payment Date| Date
+
 Paid| Text
+
 Due for Payment| Text
+
 Unit Price| Numeric
+
 Total Price| Numeric
 
 For example, imported quantities that arrived as text are converted into numeric values using "VALUE()".
