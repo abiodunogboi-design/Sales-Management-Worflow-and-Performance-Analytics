@@ -134,7 +134,9 @@ The dataset captures:
 This allows the operational side of the business to work with a simple data-entry environment without directly interacting with the analytical calculations.
 
  **Technicality:**
+ - "Sales Reprecentative" and "Distributor" are both dropdown from a list while each product are made as column to reduce typographic error. Sales rep only needs to type in the quantity purchased under each product.
  - The sales interface functions like an app that records and process orders. Therefore, it wasn't designed to look like the conventional data structure. However, it was collapsed into the conventional data structure in the analytics data tab to enhance analytics uning a query that splits and flattens the products columns ***C to S*** into a a single column with the header quantity because each of the product column contains the respective quantity ordered.
+ - Each distributor is automatically assigned a tier based on their total quantity purched history. Any distributor that has less than 20,000 units in total quantity purchased in assigned a tier 1 with 0% discount on all purchase. Distributors with more than 20,000 and less than 50,000 units in total quantities purchased is assigned a tier 2 with 1.5% discount on all subsequent purchases upon attaining the tier, distributors with more than 50,000 and less than 100,000 units in total quantities purchased are assigned a tier 3 with 3% discount on all subsequent purchases upon attaining the tier, while distributors with over 100,000 units in total quantities purchased are assigned tier 4 with 5% discount on all subsequent purchases upon attaining the tier
 
    ---
    =ARRAYFORMULA(
@@ -158,9 +160,9 @@ This allows the operational side of the business to work with a simple data-entr
     0
   )
 )
+
 ---
- - "Sales Reprecentative" and "Distributor" are both dropdown from a list to reduce typographic error and ensure efficiency.
- - In the sales interface, product names are intentionally made as column headers to reduce typographic error. Sales rep only needs to type in the quantity purchased under each product. However, to enhance analytics, the entire columns containing products names was collaped in the Analytics data
+ - In 
 
 
 
