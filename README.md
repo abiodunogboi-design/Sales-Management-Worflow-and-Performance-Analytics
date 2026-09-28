@@ -168,9 +168,7 @@ This allows the operational side of the business to work with a simple data-entr
 
 ---
 
-=XLOOKUP(SUMPRODUCT((Sales!$B$2:$B$801=$A17) * Sales!$C$2:$S$801), $E$2:$E$5, $F$2:$F$5, "Tier 1", -1)
-
----
+=XLOOKUP(SUMPRODUCT((Sales!$B$2:$B$801=$A17) * Sales!$C$2:$S$100000), $E$2:$E$5, $F$2:$F$5, "Tier 1", -1)
 
 ---
 
