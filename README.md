@@ -4,13 +4,14 @@ Synthexa Global Solutions — Sales Management Workflow & Analytics System
 
 🚀 Project Overview
 
-🚨 In fast-paced sales environments, capturing transactional data quickly and accurately is vital for strategic decision-making. However, Synthexa Global Solution's sales-tracking workflow relied on fragmented, unvalidated data collection methods. Sales representatives submitted their daily transaction logs via disparate formats, including email, chat apps, and unstructured spreadsheets.This ad-hoc workflow created severe operational bottlenecks and financial risks
+🚨
 
 ---
 
 🎯 The Business Problem
 
 ---
+🚨 In fast-paced sales environments, capturing transactional data quickly and accurately is vital for strategic decision-making. However, Synthexa Global Solution's sales-tracking workflow relied on fragmented, unvalidated data collection methods. Sales representatives submitted their daily transaction logs via disparate formats, including email, chat apps, and unstructured spreadsheets.This ad-hoc workflow created severe operational bottlenecks and financial risks
 
 **Severe Data Corruption & Manual Errors:** Representatives frequently entered invalid SKUs, left critical data fields blank, or accidentally over-wrote orders.
 
