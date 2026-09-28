@@ -141,6 +141,8 @@ This allows the operational side of the business to work with a simple data-entr
  - "Sales Reprecentative" and "Distributor" are both dropdown from a list while each product are made as column to reduce typographic error. Sales rep only needs to type in the quantity purchased under each product.
  - The sales interface functions like an app that records and process orders. Therefore, it wasn't designed to look like the conventional data structure. However, it was collapsed into the conventional data structure in the analytics data tab to enhance analytics uning a query that splits and flattens the products columns ***C to S*** into a a single column with the header quantity because each of the product column contains the respective quantity ordered.
 
+<img width="788" height="345" alt="Screenshot 2026-09-23 143834" src="https://github.com/user-attachments/assets/2474e115-1632-46ad-b988-ce4c6d317a3f" />
+
    ---
    =ARRAYFORMULA(
   QUERY(
