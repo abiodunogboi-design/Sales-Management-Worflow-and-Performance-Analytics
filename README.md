@@ -62,38 +62,32 @@ The objective is to create a repeatable workflow where operational data can cont
                                |                                                          
                                ▼                                                          
                      Operational Data Entry ─────────────────────────────────────────── **WPS**
-                       (Sales interface)                                                   |
-                               │                                                           |
-                               ▼                                                           ▼
-                       Credit and Debit                                                   
-                       (Balance sheet)
-                               |
-                               ▼
-                         Rep Metrics
-                    (Sales rep performance)
-                             
-                               ▼
-                           RAW DATA
-                    Staging / Organization
-                               │
-                               ▼
-                         CLEAN DATA
-              Standardized Analytical Dataset
-                               │
-                               ▼
-                      ANALYTICAL ENGINE
-                 PivotTables + Calculations
-                               │
-              ┌────────────────┼────────────────┐
-              ▼                ▼                ▼
-        Sales Analysis   Payment Analysis   KPI Analysis
-              │                │                │
-              └────────────────┼────────────────┘
-                               ▼
-                     MANAGEMENT DASHBOARD
-                               │
-                               ▼
-                     MANAGEMENT INSIGHTS
+                       (Sales interface)               (Published to web)                  |
+                               │                                                           ▼
+                               ▼                                                       Dumped Data
+                       Credit and Debit                                                    |
+                       (Balance sheet)                                                     ▼
+                               |                                                        Raw Data
+                               ▼                                                  (Staging / Organization)
+                         Rep Metrics                                                       |
+                    (Sales rep performance)                                                ▼
+                                                                                      Cleam Data  
+                                                                              (Standardized Analytical Dataset)
+                                                                                           |
+                                                                                           ▼
+                                                                                     Analytical Engine
+                                                                                 (PivotTables + Calculations)
+                                                                                           |
+                                                                          ┌────────────────┼────────────────┐
+                                                                          ▼                ▼                ▼
+                                                                   Sales Analysis    Payment Analysis    KPI Analysis
+                                                                          |                |                |
+                                                                          └────────────────┼────────────────┘
+                                                                                           ▼ 
+                                                                                  Management Dashboard
+                                                                                           |
+                                                                                           ▼
+                                                                                    MAnagement Insights
 
 This architecture intentionally separates operations from analytics.
 
