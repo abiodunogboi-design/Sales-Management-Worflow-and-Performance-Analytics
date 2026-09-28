@@ -175,6 +175,7 @@ This allows the operational side of the business to work with a simple data-entr
 =XLOOKUP(SUMPRODUCT((Sales!$B$2:$B$801=$A17) * Sales!$C$2:$S$100000), $E$2:$E$5, $F$2:$F$5, "Tier 1", -1)
 
 ---
+<img width="959" height="373" alt="image" src="https://github.com/user-attachments/assets/8be8037c-c6ff-4cdd-b80c-2618aad408c2" />
 
 **2. Automated Data Flow**
 
