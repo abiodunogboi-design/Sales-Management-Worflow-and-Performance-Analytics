@@ -1,10 +1,10 @@
 # Sales-Management-Worflow-and-Performance-Analytics
 
-OG Enterprise Ltd — Sales Management Workflow & Analytics System
+Synthexa Global Solutions — Sales Management Workflow & Analytics System
 
 🚀 Project Overview
 
-The OG Enterprise Sales Management Workflow & Analytics System is an end-to-end business data workflow designed to connect sales operations, data collection, data processing, performance monitoring, and management reporting in one system.
+The Synthexa Global Solutions Sales Management Workflow & Analytics System is an end-to-end business data workflow designed to connect sales operations, data collection, data processing, performance monitoring, and management reporting in one system.
 
 The project goes beyond building a static dashboard.
 
