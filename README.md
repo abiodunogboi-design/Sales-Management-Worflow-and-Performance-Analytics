@@ -118,7 +118,7 @@ Sales information can be entered as transactions occur.
 
 The dataset captures:
 
-- Sales Representative : The name of the sales rep executing the order
+- Sales Representative: The name of the sales rep executing the order
 - Distributor: The Distributor raising the order
 - Product: The products raised by the distributor
 - Quantity: The quantity of products raised by the distributor
@@ -129,10 +129,39 @@ The dataset captures:
 - Payment Status: Paid/Unpaid as of current date
 - Due For Payment: shows whether the expected payment date has passed
 - Unit Price: The price per unit product
-- Total Price: The total cost of the order
-
+- Total Price: The total cost of the order.
 
 This allows the operational side of the business to work with a simple data-entry environment without directly interacting with the analytical calculations.
+
+ **Technicality:**
+ - The sales interface functions like an app that records and process orders. Therefore, it wasn't designed to look like the conventional data structure. However, it was colapsed into the conventional data structure in a different sheet tab to enhance analytics with the formula
+
+   ---
+   =ARRAYFORMULA(
+  QUERY(
+    SPLIT(
+      FLATTEN(
+        Sales!A2:A&"♦"&
+        Sales!B2:B&"♦"&
+        Sales!C$1:S$1&"♦"&
+        Sales!C2:S&"♦"&
+        Sales!T2:T&"♦"&
+        Sales!U2:U&"♦"&
+        Sales!V2:V&"♦"&
+        Sales!W2:W&"♦"&
+        Sales!Y2:Y&"♦"&
+        Sales!Z2:Z
+      ),
+      "♦"
+    ),
+    "where Col1 is not null and Col3 is not null and Col4 is not null",
+    0
+  )
+)
+---
+ - "Sales Reprecentative" and "Distributor" are both dropdown from a list to reduce typographic error and ensure efficiency.
+ - In the sales interface, product names are intentionally made as column headers to reduce typographic error. Sales rep only needs to type in the quantity purchased under each product. However, to enhance analytics, the entire columns containing products names was collaped in the Analytics data
+
 
 
 2. Automated Data Flow
