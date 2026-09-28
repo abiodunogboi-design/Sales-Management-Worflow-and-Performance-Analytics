@@ -35,9 +35,11 @@ The project goes beyond building a static dashboard.
 
 It was designed as a workflow system in which sales information can move from the point of operational entry through structured data processing and ultimately into management-level analytics.
 
-The system connects:
+The system connects two sub-systems:
 
-Sales Operations → Data Capture → Data Staging → Data Cleaning → KPI Calculation → Performance Analysis → Management Dashboard
+- **Sales Operations (Google sheet):** Distributor Tiers assignment(discounting purpose) → Sales Data Capture → Data Staging → Balance Sheet → Sales Rep KPI Calculation → Sales Rep Performance Analysis.
+  
+- **Analytics (WPS):** Dumped data → Data Staging → KPI Calculations → Executive Dashboard.
 
 The objective is to create a repeatable workflow where operational data can continuously flow into the analytical environment, reducing manual intervention while giving management visibility into sales performance, target achievement, customer activity, and debt recovery.
 
