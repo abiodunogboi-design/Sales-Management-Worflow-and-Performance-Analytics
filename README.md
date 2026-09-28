@@ -106,7 +106,9 @@ Instead, the workflow is designed so that new operational records can flow throu
 
 🔄 **How the Workflow Works**
 
-1. Operational Data Capture
+---
+
+**1. Operational Data Capture**
 
 Google Sheets
 
@@ -170,9 +172,9 @@ This allows the operational side of the business to work with a simple data-entr
 
 ---
 
+---
 
-
-2. Automated Data Flow
+**2. Automated Data Flow**
 
 The operational Google Sheet is connected to the analytical workbook through a published data feed.
 
@@ -194,7 +196,7 @@ The WPS import was configured to refresh automatically, allowing the management 
 
 ---
 
-3. Dumped Data Layer
+**3. Dumped Data Layer**
 
 "Dumped_Data"
 
@@ -244,7 +246,6 @@ The objective is not simply to make the data visually clean.
 
 Each field is converted to its expected analytical data type.
 
-Field| Expected Type
 Sales Rep| Text
 Distributor| Text
 Product| Text
@@ -266,7 +267,7 @@ This is important because downstream aggregation, PivotTables, calculations, and
 
 ---
 
-📊 Analytical Layer
+***📊 Analytical Layer***
 
 Once the data has been standardized, it enters the analytical layer.
 
