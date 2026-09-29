@@ -109,7 +109,7 @@ Google Sheets
 
 Google Sheets acts as the operational interface.
 
-**Interact with the Google Sheets interface [here](https://docs.google.com/spreadsheets/d/11vOJej1EhdzehAz3htSsr2jR4gbEbQv5AfkF0_2Q5Wo/edit?usp=sharing)**
+** [View the Google Sheets operational interface](https://docs.google.com/spreadsheets/d/11vOJej1EhdzehAz3htSsr2jR4gbEbQv5AfkF0_2Q5Wo/edit?usp=sharing)**
 
 Sales information can be entered as transactions occur. The dataset captures:
 
