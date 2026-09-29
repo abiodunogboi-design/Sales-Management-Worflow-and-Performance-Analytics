@@ -109,7 +109,7 @@ Google Sheets
 
 Google Sheets acts as the operational interface.
 
-** [View the Google Sheets operational interface](https://docs.google.com/spreadsheets/d/11vOJej1EhdzehAz3htSsr2jR4gbEbQv5AfkF0_2Q5Wo/edit?usp=sharing)**
+[Explore the operational data-entry interface](https://docs.google.com/spreadsheets/d/11vOJej1EhdzehAz3htSsr2jR4gbEbQv5AfkF0_2Q5Wo/edit?usp=sharing)
 
 Sales information can be entered as transactions occur. The dataset captures:
 
@@ -159,11 +159,13 @@ This allows the operational side of the business to work with a simple data-entr
 ```
 
  -  Each distributor is automatically assigned a tier based on cumulative purchase quantity. Each tier determines the discount applied to subsequent purchases.
-
-<img width="257" height="92" alt="Screenshot 2026-09-23 143953" src="https://github.com/user-attachments/assets/0080be08-cd0b-45fe-b9ff-2b2db47d5062" />
  
-<img width="959" height="373" alt="image" src="https://github.com/user-attachments/assets/8be8037c-c6ff-4cdd-b80c-2618aad408c2" />
-
+<img width="959" height="373" alt="image" src="https://github.com/user-attachments/assets/8be8037c-c6ff-4cdd-b80c-2618aad408c2" /> 
+  
+  This automatic assignment is obtained using:
+```
+=XLOOKUP(SUMPRODUCT((Sales!$B$2:$B$801=$A2) * Sales!$C$2:$S$801), $E$2:$E$5, $F$2:$F$5, "Tier 1", -1)
+```
 
 **2. Automated Data Flow**
 
