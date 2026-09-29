@@ -252,13 +252,11 @@ The system is designed to recognize that this is a monthly target, rather than a
 
 Therefore:
 
-Monthly Target
-= $5,000,000 per representative
+Monthly Target = $5,000,000 per representative
 
 For multiple months:
 
-Period Target
-= $5,000,000 × Number of Months
+Period Target = $5,000,000 × Number of Months × number of representatives
 
 This allows target achievement to remain meaningful when management changes the reporting period.
 
@@ -291,25 +289,25 @@ The workflow also transforms transaction records into product and distributor in
 
 Management can analyze:
 
-Products
+Products:
 
 - Quantity sold
 - Revenue generated
 - Product contribution
 - Sales trends
 
-Distributors
+Distributors:
 
 - Number of distributors served
 - Distributor purchasing activity
 - Revenue generated
 - Sales representative relationships
 
-The system distinguishes between transaction volume and unique distributor count so repeated purchases from the same distributor are not incorrectly treated as multiple customers.
+The system distinguishes between transaction volume and unique distributor count so repeated purchases from the same distributor are not incorrectly treated as multiple distributors.
 
 ---
 
-📅 Time-Based Workflow
+**📅 Time-Based Workflow**
 
 Every transaction contains date information that allows the system to analyze performance across time.
 
@@ -317,43 +315,38 @@ The workflow supports analysis by:
 
 - Date
 - Month
-- Year
 - Reporting period
 
-This allows management to move from:
+This allows management to move from overall performance to monthly performance, and eventually to more granular periods.
 
-overall performance
+Similar time-based filters can also be used to evaluate the **Sales Representative Metrics Outlook**, allowing sales representatives to examine how individual representatives perform across different periods.
 
-to:
+For each sales representative, the dashboard can provide a period-based view of metrics such as
 
-yearly performance
+- Total Sales
+- Target
+- Achievement(%)
+- Target Deficit
+- Outstanding Debt
+- Total Debt Recovered
+- Average Order Value
+- Total Quantities Sold
 
-to:
-
-monthly performance
-
-and eventually to more granular periods.
-
-For example, month values can be extracted from standardized dates using:
-
-=TEXT(A2,"mmmm")
+This allows both individual sales representative and management to compare each representative's performance across reporting periods and identify changes in sales activity, target achievement, and other performance metrics
 
 ---
 
-🎛️ Interactive Management Reporting
+**🎛️ Interactive Management Reporting**
 
 The final stage of the workflow is the management dashboard.
 
 The dashboard is designed to allow users to investigate the underlying business information rather than simply view static numbers.
 
-Potential filtering dimensions include:
+The dashboard supports filtering by
 
 - Sales Representative
 - Distributor
-- Product
-- Current Tier
-- Payment Status
-- Year
+- Tier
 - Month
 - Date
 
@@ -371,7 +364,7 @@ Investigate Sales / Products / Distributors / Payments
 
 ---
 
-📊 Dashboard KPIs
+**📊 Dashboard KPIs**
 
 The management dashboard brings together key indicators such as:
 
@@ -387,7 +380,7 @@ These KPIs provide a high-level view while the supporting charts allow users to 
 
 ---
 
-🔁 Why This Is a Workflow System
+**🔁 Why This Is a Workflow System**
 
 The defining feature of this project is that it is not dependent on a one-time analysis.
 
@@ -421,55 +414,7 @@ This makes the project closer to a small-scale business information system than 
 
 ---
 
-🧠 Data Analytics Concepts Demonstrated
-
-This project demonstrates practical understanding of:
-
-Data Engineering Concepts
-
-- Data ingestion
-- Data staging
-- ETL workflow design
-- Data-type standardization
-- Layered data architecture
-- Automated data refresh
-
-Data Analytics
-
-- Aggregation
-- KPI development
-- Target vs achievement analysis
-- Sales performance analysis
-- Product analysis
-- Distributor analysis
-- Payment analysis
-- Time-based analysis
-
-Spreadsheet Analytics
-
-- "TEXTSPLIT"
-- "VALUE"
-- "DATEVALUE"
-- "SUMPRODUCT"
-- "SUMIF"
-- "UNIQUE"
-- "FILTER"
-- "XLOOKUP"
-- PivotTables
-- Charts
-- Interactive filtering
-
-Business Intelligence
-
-- KPI design
-- Management reporting
-- Interactive dashboards
-- Operational-to-management reporting
-- Decision-support workflows
-
----
-
-🛠️ Technology Stack
+**🛠️ Technology Stack**
 
 Layer| Technology
 Operational Data Entry| Google Sheets
@@ -480,7 +425,7 @@ Analytical Processing| PivotTables & formulas
 Visualization| WPS Spreadsheet
 Version Control / Portfolio| GitHub
 
-🔮 Future Development
+**🔮 Future Development**
 
 The current spreadsheet-based workflow provides the foundation for a more advanced business intelligence system.
 
@@ -512,19 +457,13 @@ I designed the system around a fundamental principle:
 
 «Operational data should flow through a controlled process before it becomes management information.»
 
-The project therefore considers not only:
-
-"What does the data say?"
-
-but also:
+The project therefore considers not only "What does the data say?", but also:
 
 "Where does the data come from?"
 "How is it transformed?"
 "How is data quality maintained?"
 "How are business rules applied?"
 "How does management consume the information?"
-
-That workflow perspective is the core of the project.
 
 ---
 
