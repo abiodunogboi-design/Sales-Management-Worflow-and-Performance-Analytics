@@ -332,6 +332,9 @@ For each sales representative, the dashboard can provide a period-based view of 
 - Average Order Value
 - Total Quantities Sold
 
+<img width="938" height="362" alt="Screenshot 2026-09-29 144720" src="https://github.com/user-attachments/assets/e925dc6d-b860-490a-b01e-773549154fde" />
+
+
 This allows both individual sales representative and management to compare each representative's performance across reporting periods and identify changes in sales activity, target achievement, and other performance metrics
 
 ---
@@ -371,7 +374,7 @@ The management dashboard brings together key indicators such as:
 - Total Sales
 - Total Quantity Sold
 - Target
-- Achievement %
+- Achievement(%)
 - Distributor Coverage
 - Debt Recovered
 - Outstanding Amount
