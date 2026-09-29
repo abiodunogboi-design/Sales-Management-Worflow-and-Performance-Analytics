@@ -235,10 +235,10 @@ The system analyzes sales performance by representative using metrics including:
 - Quantity Sold
 - Distributor Coverage
 - Target
-- Achievement
+- Achievement(%)
 - Debt Recovery
 
-This allows management to move from individual transaction records to representative-level performance.
+These metrics allow management to move from individual transaction records to representative-level performance.
 
 ---
 
