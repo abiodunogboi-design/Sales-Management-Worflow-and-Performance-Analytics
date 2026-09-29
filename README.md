@@ -173,20 +173,18 @@ The operational Google Sheets is connected to the analytical workbook through a 
 
 This creates a workflow in which:
 
-New transaction entered
-        → 
-Google Sheets updated
-        → 
-Published data source updated
-        → 
-WPS imports the updated data
-        → 
-Analytical layers update
-        → 
-Dashboard reflects new information
+New transaction entered → Google Sheets updated → Published data source updated → WPS imports the updated data → Analytical layers update → Dashboard reflects new information
 
-The back-end workbook utilizes an automated data connection to pull live records from the operational layer, eliminating manual data handling. Once imported, the raw staging data passes through automated cleaning formulas that programmatically standardize fields and cast them into their appropriate analytical data types."
-
+The back-end workbook utilizes an automated data connection to retrieve updated records from the operational layer, eliminating manual data handling. Once imported, the data passes through automated standardizing formulas that programmatically standardize fields and convert them into their appropriate analytical data types.
+```
+=IFNA(TEXTSPLIT('Dumped data'!A2,CHAR(9)),"")
+```
+```
+=IFNA(VALUE('Raw data'!D2),"")
+```
+```
+=IFNA(DATEVALUE('Raw data'!G2),"")
+```
 Sales Rep| Text
 
 Distributor| Text
@@ -210,6 +208,8 @@ Due for Payment| Text
 Unit Price| Numeric
 
 Total Price| Numeric
+
+
 
 For example, imported quantities that arrived as text are converted into numeric values using "VALUE()".
 
