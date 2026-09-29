@@ -13,7 +13,7 @@ Synthexa Global Solutions — Sales Management Workflow & Analytics System
 
 **Severe Data Corruption & Manual Errors:** Representatives frequently entered invalid SKUs, left critical data fields blank, or accidentally overwrote orders.
 
-**The "Data-Lag" Bottleneck:** Because data wasn't centralized or live, operations managers had to spend hours every week manually aggregating entries, cleaning formatting inconsistencies, and manually auditing calculation metrics.
+**The "Data-Lag" Bottleneck:** Because data wasn't centralized or live, operations managers had to spend hours every week manually aggregating entries, cleaning, and formatting inconsistencies, and manually auditing calculation metrics.
 
 **Blind Leadership Decision-Making:** Growing sales operations can quickly become difficult to manage when information is scattered across transaction records. For Synthexa Global Solutions, management needs to know:
 - What has been sold?
@@ -179,12 +179,6 @@ The back-end workbook utilizes an automated data connection to retrieve updated 
 ```
 =IFNA(TEXTSPLIT('Dumped data'!A2,CHAR(9)),"")
 ```
-```
-=IFNA(VALUE('Raw data'!D2),"")
-```
-```
-=IFNA(DATEVALUE('Raw data'!G2),"")
-```
 Sales Rep| Text
 
 Distributor| Text
@@ -209,12 +203,14 @@ Unit Price| Numeric
 
 Total Price| Numeric
 
-
-
 For example, imported quantities that arrived as text are converted into numeric values using "VALUE()".
-
+```
+=IFNA(VALUE('Raw data'!D2),"")
+```
 Imported dates are converted into genuine date values using "DATEVALUE()".
-
+```
+=IFNA(DATEVALUE('Raw data'!G2),"")
+```
 This is important because downstream aggregation, PivotTables, calculations, and date filtering depend on the correct underlying data types.
 
 ---
