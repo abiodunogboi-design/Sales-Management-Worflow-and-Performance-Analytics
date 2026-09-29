@@ -194,60 +194,7 @@ Analytical layers update
         → 
 Dashboard reflects new information
 
-
-The WPS import was configured to refresh automatically, allowing the management workbook to receive updated source information without requiring the entire workflow to be rebuilt manually.
-
----
-
-**3. Dumped Data Layer**
-
-<img width="959" height="367" alt="Screenshot 2026-09-23 144231" src="https://github.com/user-attachments/assets/0cb80ed0-ce53-46ce-9cf9-9e3e572b56df" />
-
-The dumped layer represents the incoming source data.
-
-Its purpose is preservation.
-
-Rather than immediately manipulating the source information, the system maintains a layer representing what was received from the operational source.
-
-This provides a useful separation between:
-
-incoming data
-
-and
-
-processed data.
-
----
-
-**4. Raw Data Layer**
-
-<img width="950" height="346" alt="Screenshot 2026-09-23 144255" src="https://github.com/user-attachments/assets/a2beda7c-befa-41d2-9826-144b4c10e589" />
-
-The raw layer acts as the staging environment.
-
-Data is organized into a consistent tabular structure before entering the analytical cleaning layer.
-
-This creates a clear progression:
-
-Dumped Data
-     → 
-Raw Data
-     → 
-Clean Data
-
-Each stage has a defined responsibility rather than mixing source data, transformations, and reporting logic together.
-
----
-
-**5. Clean Data Layer**
-
-<img width="944" height="347" alt="Screenshot 2026-09-28 150419" src="https://github.com/user-attachments/assets/64ac9362-214d-4dff-89f7-aa89f0acde1a" />
-
-This is the system's analytical data layer.
-
-The objective is not simply to make the data visually clean.
-
-Each field is converted to its expected analytical data type.
+The back-end workbook utilizes an automated data connection to pull live records from the operational layer, eliminating manual data handling. Once imported, the raw staging data passes through automated cleaning formulas that programmatically standardize fields and cast them into their appropriate analytical data types."
 
 Sales Rep| Text
 
