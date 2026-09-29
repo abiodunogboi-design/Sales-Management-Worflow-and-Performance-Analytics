@@ -93,9 +93,7 @@ The objective is to create a repeatable workflow where operational data can cont
 
 This architecture intentionally separates operations from analytics.
 
-The person entering sales data does not need to manually manipulate the management dashboard.
-
-Instead, the workflow is designed so that new operational records can flow through the system and become available for analysis.
+The person entering sales data does not need to manually manipulate the management dashboard. Instead, the workflow is designed so that new operational records can flow through the system and become available for analysis.
 
 ---
 
@@ -111,18 +109,16 @@ Google Sheets
 
 Google Sheets acts as the operational interface.
 
-**Interract with the Google Sheets interface [here](https://docs.google.com/spreadsheets/d/11vOJej1EhdzehAz3htSsr2jR4gbEbQv5AfkF0_2Q5Wo/edit?usp=sharing)**
+**Interact with the Google Sheets interface [here](https://docs.google.com/spreadsheets/d/11vOJej1EhdzehAz3htSsr2jR4gbEbQv5AfkF0_2Q5Wo/edit?usp=sharing)**
 
-Sales information can be entered as transactions occur.
-
-The dataset captures:
+Sales information can be entered as transactions occur. The dataset captures:
 
 - Sales Representative: The name of the sales rep executing the order
 - Distributor: The Distributor raising the order
 - Product: The products raised by the distributor
 - Quantity: The quantity of products raised by the distributor
 - Current Tier: The discount percentage tier the distributor is currently on
-- Tier at Purchase: The discout percentage tier the distributor was at the time of purchase
+- Tier at Purchase: The discount percentage tier the distributor was at the time of purchase
 - Supply Date: The date the distributor received their order
 - Expected Payment Date: The date the distributor is expected to pay for orders received
 - Payment Status: Paid/Unpaid as of current date
@@ -133,8 +129,8 @@ The dataset captures:
 This allows the operational side of the business to work with a simple data-entry environment without directly interacting with the analytical calculations.
 
  **Technicality:**
- - "Sales Reprecentative" and "Distributor" are both dropdown from a list while each product are made as column to reduce typographic error. Sales rep only needs to type in the quantity purchased under each product.
- - The sales interface functions like an app that records and process orders. Therefore, it wasn't designed to look like the conventional data structure. However, it was collapsed into the conventional data structure in the analytics data tab to enhance analytics uning a query that splits and flattens the products columns ***C to S*** into a a single column with the header quantity because each of the product column contains the respective quantity ordered.
+ - "Sales Representative" and "Distributor" are both dropdown from a list while each product is represented as a separate column to reduce typographic error. Sales rep only needs to type in the quantity purchased under each product.
+ - The sales interface is designed as an app-like operational input system rather than a conventional tabular dataset. To support analysis, the wide-format operational data is transformed into a normalizeed analytical structure in the Analytics Data tab. A query splits and flattens product columns C:S into Product and Quantity fields, allowing each product transaction to be analyzed as an individual record.
 
 <img width="788" height="345" alt="Screenshot 2026-09-23 143834" src="https://github.com/user-attachments/assets/2474e115-1632-46ad-b988-ce4c6d317a3f" />
 
@@ -162,7 +158,7 @@ This allows the operational side of the business to work with a simple data-entr
 )
 ```
 
- -  Each distributor is automatically assigned a tier based on their total quantity purched history. Any distributor that has less than 20,000 units in total quantity purchased in assigned a tier 1 with 0% discount on all purchase. Distributors with more than 20,000 and less than 50,000 units in total quantities purchased is assigned a tier 2 with 1.5% discount on all subsequent purchases upon attaining the tier, distributors with more than 50,000 and less than 100,000 units in total quantities purchased are assigned a tier 3 with 3% discount on all subsequent purchases upon attaining the tier, while distributors with over 100,000 units in total quantities purchased are assigned tier 4 with 5% discount on all subsequent purchases upon attaining the tier. This is achieved using the formula:
+ -  Each distributor is automatically assigned a tier based on their history of total quantity purchased. Any distributor that has less than 20,000 units in total quantity purchased is assigned a tier 1 with 0% discount on all purchase. Distributors with more than 20,000 and less than 50,000 units in total quantities purchased is assigned a tier 2 with 1.5% discount on all subsequent purchases upon attaining the tier, distributors with more than 50,000 and less than 100,000 units in total quantities purchased are assigned a tier 3 with 3% discount on all subsequent purchases upon attaining the tier, while distributors with over 100,000 units in total quantities purchased are assigned tier 4 with 5% discount on all subsequent purchases upon attaining the tier. This is achieved using the formula:
 
 ```
 
