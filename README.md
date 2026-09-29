@@ -1,21 +1,21 @@
-# Sales-Management-Worflow-And-Performance-Analytics
+# Sales-Management-Workflow-and-Performance-Analytics
 
 Synthexa Global Solutions — Sales Management Workflow & Analytics System
 
-🚀 This project is an interactive sales management dashboard built in Excel to analyze sales performance, customer payments, outstanding debts, and target achievement. Using data cleaning, formulas, pivot tables, slicers, and dynamic KPIs, I transformed raw sales records into actionable insights for monitoring both sales representatives and distributors. The dashboard is designed as a practical business tool that supports daily performance tracking and data-driven decision-making.
+🚀 This project is an interactive sales management dashboard built in Google Sheets and WPS to analyze sales performance, customer payments, outstanding debts, and target achievement. Using data cleaning, formulas, pivot tables, slicers, and dynamic KPIs, I transformed raw sales records into actionable insights for monitoring both sales representatives and distributors. The dashboard is designed as a practical business tool that supports daily performance tracking and data-driven decision-making.
 
 ---
 
 🎯 The Business Problem
 
 ---
-🚨 In fast-paced sales environments, capturing transactional data quickly and accurately is vital for strategic decision-making. However, Synthexa Global Solution's sales-tracking workflow relied on fragmented, unvalidated data collection methods. Sales representatives submitted their daily transaction logs via disparate formats, including email, chat apps, and unstructured spreadsheets.This ad-hoc workflow created severe operational bottlenecks and financial risks
+🚨 In fast-paced sales environments, capturing transactional data quickly and accurately is vital for strategic decision-making. However, Synthexa Global Solutions' sales-tracking workflow relied on fragmented, unvalidated data collection methods. Sales representatives submitted their daily transaction logs via disparate formats, including email, chat apps, and unstructured spreadsheets. This ad-hoc workflow created severe operational bottlenecks and financial risks.
 
-**Severe Data Corruption & Manual Errors:** Representatives frequently entered invalid SKUs, left critical data fields blank, or accidentally over-wrote orders.
+**Severe Data Corruption & Manual Errors:** Representatives frequently entered invalid SKUs, left critical data fields blank, or accidentally overwrote orders.
 
-**The "Lag Time" Bottleneck:** Because data wasn't centralized or live, operations managers had to spend hours every week manually aggregating entries, cleaning formatting inconsistencies, and manually auditing calculation metrics.
+**The "Data-Lag" Bottleneck:** Because data wasn't centralized or live, operations managers had to spend hours every week manually aggregating entries, cleaning formatting inconsistencies, and manually auditing calculation metrics.
 
-**Blind Leadership Decision-Making:** A growing sales operation can quickly become difficult to manage when information is scattered across transaction records. For Synthexa Global Solutions. Management needs to know:
+**Blind Leadership Decision-Making:** Growing sales operations can quickly become difficult to manage when information is scattered across transaction records. For Synthexa Global Solutions, management needs to know:
 - What has been sold?
 - Who sold it?
 - How much was sold?
@@ -25,27 +25,23 @@ Synthexa Global Solutions — Sales Management Workflow & Analytics System
 - How much money has been collected?
 - How much is still outstanding?
 - Which payments are overdue?
-- How is performance changing over time?.
+- How is performance changing over time?
   
-  **Issue:** A conventional spreadsheet containing raw transactions can answer some of these questions, but it does not provide a complete operational-to-management workflow. Also, executive dashboards could only be updated at the end of the week or month. This lack of real-time visibility meant leadership was constantly looking in the rearview mirror, unable to pivot strategies or spot dropping conversion rates when they actually occurred.
-💡 The App aims to eliminate this operational friction, this project re-engineered the entire collection pipeline into a self-contained, interactive Excel application.The objective was to create a unified, bulletproof interface that balances two distinct user experiences:
-
-**For Sales Reps:** A streamlined, app-like input interface that strictly enforces data integrity rules at the exact moment of entry—making it physically impossible for a user to break the underlying math.
-
-**For Leadership:** A zero lag, automated engine that processes those raw entries instantly through a matrix of advanced formulas, immediately feeding a live executive KPI board for real time strategic steering upon refresh.
-  This project addresses that gap by creating a structured system connecting data entry, processing, analysis, and reporting.
-
-The Synthexa Global Solutions Sales Management Workflow & Analytics System is an end-to-end business data workflow designed to connect sales operations, data collection, data processing, performance monitoring, and management reporting in one system. 
-
-The project goes beyond building a static dashboard.
-
-It was designed as a workflow system in which sales information can move from the point of operational entry through structured data processing and ultimately into management-level analytics.
-
-The system connects two sub-systems:
-
-- **Sales Operations (Google sheet):** Distributor Tiers assignment(discounting purpose) → Sales Data Capture → Data Staging → Balance Sheet → Sales Rep KPI Calculation → Sales Rep Performance Analysis.
+  **Issue:** A conventional spreadsheet containing raw transactions can answer some of these questions, but it does not provide a complete operational-to-management workflow. Previously, executive dashboards could only be updated at the end of the week or month. This lack of timely visibility meant leadership was often reacting to historical performance rather than identifying emerging trends early.
   
-- **Analytics (WPS):** Dumped data → Data Staging → Data Cleaning → KPI Calculations → Executive Dashboard.
+💡 This project aims to eliminate this operational friction by re-engineered the entire collection pipeline into a self-contained, interactive spreadsheet application. The objective was to create a unified, structured interface that balances two distinct user experiences:
+
+**For Sales Representatives:** A streamlined, app-like input interface that enforces data validation and reduces the risk of invalid entries or calculation errors.
+
+**For Leadership:** An automated analytical engine that processes incoming data through structured formulas, feeding an executive KPI board for timely strategic decision-making upon refresh. This project addresses that gap by creating a structured system connecting data entry, processing, analysis, and reporting.
+
+The Synthexa Global Solutions Sales Management Workflow & Analytics System is an end-to-end business data workflow designed to connect sales operations, data collection, data processing, performance monitoring, and management reporting in one system. The project goes beyond building a static dashboard; it was designed as a workflow system in which sales information can move from the point of operational entry through structured data processing and ultimately into management-level analytics.
+
+The system connects two subsystems:
+
+- **Sales Operations (Google Sheets):** Distributor Tier assignment (for discounting) → Sales Data Capture → Data Staging → Sales Rep KPI Calculation → Sales Rep Performance Analysis.
+  
+- **Analytics (WPS):** Imported Data → Data Staging → Data Cleaning → KPI Calculations → Executive Dashboard
 
 The objective is to create a repeatable workflow where operational data can continuously flow into the analytical environment, reducing manual intervention while giving management visibility into sales performance, target achievement, customer activity, and debt recovery.
 
@@ -53,31 +49,31 @@ The objective is to create a repeatable workflow where operational data can cont
 
 🏗️ System Architecture
 
-                          Google Sheet                                          
+                          Google Sheets                                          
                                |                                                          
                                ▼                                                          
                        Distributor Database                                          
-      (Tiers, Sales rep and discount automatic assignment)                                
+      (Tiers, sales representatives and discount assignment)                                
                                │                                                          
                                ▼                                                          
                          All Price List                                                   
                (Source of truth for all tier pricing)                                     
                                |                                                          
                                ▼                                                          
-                         Sales Operation                                                  
+                         Sales Operations                                                  
                                |                                                          
                                ▼                                                          
                      Operational Data Entry ─────────────────────────────────────────── **WPS**
-                       (Sales interface)               (Published to web)                  |
+                       (Sales interface)               (Published data feed)               |
                                │                                                           ▼
-                               ▼                                                       Dumped Data
+                               ▼                                                       Imported Data
                            Rep Metrics                                                     |
                     (Sales rep performance)                                                ▼
                                                                                         Raw Data
-                                                                                  (Staging / Organization)
+                                                                                        (Staging)
                                                                                            |
                                                                                            ▼
-                                                                                      Cleam Data  
+                                                                                      Clean Data  
                                                                               (Standardized Analytical Dataset)
                                                                                            |
                                                                                            ▼
@@ -93,7 +89,7 @@ The objective is to create a repeatable workflow where operational data can cont
                                                                                   Management Dashboard
                                                                                            |
                                                                                            ▼
-                                                                                    MAnagement Insights
+                                                                                    Management Insights
 
 This architecture intentionally separates operations from analytics.
 
@@ -115,7 +111,7 @@ Google Sheets
 
 Google Sheets acts as the operational interface.
 
-**Interract with the google sheet interface [here](https://docs.google.com/spreadsheets/d/11vOJej1EhdzehAz3htSsr2jR4gbEbQv5AfkF0_2Q5Wo/edit?usp=sharing)**
+**Interract with the Google Sheets interface [here](https://docs.google.com/spreadsheets/d/11vOJej1EhdzehAz3htSsr2jR4gbEbQv5AfkF0_2Q5Wo/edit?usp=sharing)**
 
 Sales information can be entered as transactions occur.
 
@@ -178,7 +174,7 @@ This allows the operational side of the business to work with a simple data-entr
 
 **2. Automated Data Flow**
 
-The operational Google Sheet is connected to the analytical workbook through a published data feed.
+The operational Google Sheets is connected to the analytical workbook through a published data feed.
 
 This creates a workflow in which:
 
