@@ -87,9 +87,7 @@ The objective is to create a repeatable workflow where operational data can cont
                                                                           └────────────────┼────────────────┘
                                                                                            ▼ 
                                                                                   Management Dashboard
-                                                                                           |
-                                                                                           ▼
-                                                                                    Management Insights
+                                                                                  
 
 This architecture intentionally separates operations from analytics.
 
