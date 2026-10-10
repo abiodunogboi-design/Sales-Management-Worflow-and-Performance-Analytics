@@ -225,7 +225,8 @@ The system uses PivotTables and spreadsheet calculations to transform transactio
 
 **📈 Sales Performance**
 
-<img width="652" height="437" alt="Screenshot 2026-10-10 150324" src="https://github.com/user-attachments/assets/463c88de-39f8-40ce-8080-f81c06e44665" />
+<img width="653" height="440" alt="Screenshot 2026-10-10 150922" src="https://github.com/user-attachments/assets/e76cf79b-7fcb-41a6-9994-85aca880fb1d" />
+
 
 
 The system analyzes sales performance by representative using metrics including:
