@@ -225,7 +225,8 @@ The system uses PivotTables and spreadsheet calculations to transform transactio
 
 **📈 Sales Performance**
 
-<img width="653" height="440" alt="Screenshot 2026-10-10 150922" src="https://github.com/user-attachments/assets/e76cf79b-7fcb-41a6-9994-85aca880fb1d" />
+<img width="582" height="373" alt="Screenshot 2026-10-14 153522" src="https://github.com/user-attachments/assets/b09c04b6-edce-47f5-be9a-07d87f6a5da8" />
+
 
 
 
