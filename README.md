@@ -382,6 +382,13 @@ The management dashboard brings together key indicators such as:
 
 These KPIs provide a high-level view while the supporting charts allow users to investigate the underlying drivers.
 
+## 🔎 Key Insights & Recommendations
+(Based on [real data / sample data for demonstration])
+
+- **Sales:** The top 3 products generated [X%] of revenue → recommendation: [e.g., prioritize stock and promotion for these].
+- **Targets:** [N] of [M] reps fell below the $5M monthly target, with the largest gap of $[Y] → recommendation: [e.g., review territory or distributor coverage].
+- **Collections:** $[X] (or [Y%]) of outstanding payments is overdue, concentrated in [N] distributors → recommendation: [e.g., prioritize follow-up on these accounts].
+
 ---
 
 **🔁 Why This Is a Workflow System**
