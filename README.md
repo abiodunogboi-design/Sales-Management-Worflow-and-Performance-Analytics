@@ -384,9 +384,9 @@ These KPIs provide a high-level view while the supporting charts allow users to 
 
 **🔎 Key Insights & Recommendations**
 
-- Sales: The top 3 products(Product Q, Product P, Product O) generated 35.7% of revenue → recommendation: Prioritize stocking more of these products.
+- Sales: The top 3 products(Product Q, Product P, and Product O) generated 35.7% of revenue, and the bottom 3 products(Poduct I, Product J, and Product F) generated 5.6% of revenue → recommendation: Prioritize stocking more of the top performing products to maintain availability, consider increasing promotional efforts on underperforming products 
 - Targets: The number of assigned distributors directly affects rep's ability to meet target → recommendation: Review territory or distributor coverage and assign target based on assigned distributors.
-- Collections: 60% of outstanding payments is overdue, concentrated in 7 distributors → recommendation: prioritize follow-up on these accounts, Chase the largest and oldest overdue balances first, Set clear payment rules.
+- Collections: 60% of outstanding payments is overdue, concentrated in 7 distributors → recommendation: Prioritize follow-up on these accounts, Chase the largest and oldest overdue balances first, Set clear payment rules.
 
 ---
 
